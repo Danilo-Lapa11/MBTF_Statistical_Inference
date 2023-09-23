@@ -17,9 +17,9 @@ def kolmogorov_smirnov_critico(n, ks_stats):
     for i in range(len(alphas)):
         
         ks_critico = const[i] / (np.sqrt(n))
-
+        
         if ks_critico > ks_stats:
-            print(f"Com {(100 - alphas[i])}% de confiança, teve evidências para ACEITAR a hipótese nula, segundo o teste de Kolmogorov-Smirnov a distribuição  é Normal")
+            print(f"Com {(100 - alphas[i])}% de confiança, teve evidências para ACEITAR a hipótese nula, segundo o teste de Kolmogorov-Smirnov")
         else:
-            print(f"Com {(100 - alphas[i])}% de confiança, teve evidências para REJEITAR a hipótese nula, segundo o teste de Kolmogorov-Smirnov a distribuição NÃO é Normal")
+            print(f"Com {(100 - alphas[i])}% de confiança, teve evidências para REJEITAR a hipótese nula, segundo o teste de Kolmogorov-Smirnov")
 
